@@ -1,0 +1,33 @@
+train:
+  batch_size: 4
+  num_epochs: 100
+  lr: 0.0001
+  num_workers: 10
+test:
+  batch_size: 1
+  num_workers: 10
+general:
+  is_single_shift: False
+  max_seq_len: 75
+  frames_shift_window_train: 25
+  sync_len: 25
+  max_frame_duplications: 4
+  ef_frames_window_size: 5
+  audio_window_size: 20
+  gpu_ids: '0' # for example '0 1' or '' for cpu
+  output_path: './Model/outputs'
+  TIMIT_outputs_videos_folder_name: TIMIT
+  logs_folder: 'logs'
+  checkpoints_folder: 'checkpoints'
+  current_state_file_name: 'current_state.txt'
+  eval_epcohs_freq: 1
+rnn_encoder:
+  input_size: 1024
+  hidden_size: 256
+  layers: 3
+rnn_decoder:
+  input_size: 256
+  hidden_size: 512
+  layers: 3
+  teacher_forcing_ratio: 0 # [0,1], 0 to turn off
+  dropout_p: 0.1

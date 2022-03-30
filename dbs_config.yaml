@@ -1,0 +1,58 @@
+lrs2_dataset:
+  db_folder_name: 'lrs2'
+  base_gen_path: './data/lrs2/gen/'
+  raw_train_path: './data/lrs2/raw/pretrain/'
+  raw_train_list_path: './data/lrs2/raw/pretrain.txt'
+  raw_example_path: './data/lrs2/raw/pretrain_example/'
+  raw_example_list_path: './data/lrs2/raw/pretrain_example.txt'
+  raw_test_path: './data/lrs2/raw/main/'
+  raw_test_list_path: './data/lrs2/raw/test.txt'
+  raw_validation_path: './data/lrs2/raw/main/'
+  raw_validation_list_path: './data/lrs2/raw/val.txt'
+  train_path: './data/lrs2/gen/pretrain/'
+  test_path: './data/lrs2/gen/test/'
+  validation_path: './data/lrs2/gen/validation/'
+  example_path: './data/lrs2/gen/example/'
+  frames_folder: 'frames'
+  open_face_folder: 'openface'
+  video_fps_file_name: 'video_fps'
+  audio_rate_file_name: 'audio_rate'
+  target_face_size: 62.8203174741697
+  num_of_frames_file_name: 'num_of_frames'
+  num_of_audio_frames_file_name: 'num_of_audio_frames'
+  db_creation_errors_file_name: 'db_creation_errors.txt'
+  video_frames_file_name: 'video_frames'
+  shapes2d_file_name: 'shapes_2d'
+  anchors_file_name: 'anchors'
+TIMIT:
+  db_folder_name: 'TIMIT'
+  base_gen_path: './data/TIMIT/gen/'
+  raw_validation_path: './data/TIMIT/raw/validation/'
+  raw_volunteers_path: './data/TIMIT/raw/volunteers/'
+  raw_validation_list_path: './data/TIMIT/raw/val.txt'
+  raw_validation_list_org_names_path: './data/TIMIT/raw/val_org_names.txt'
+  raw_validation_list_pairs_path: './data/TIMIT/raw/val_pairs.txt'
+  validation_path: './data/TIMIT/gen/validation/'
+  frames_folder: 'frames'
+  open_face_folder: 'openface'
+  video_fps_file_name: 'video_fps'
+  audio_rate_file_name: 'audio_rate'
+  target_face_size: 62.8203174741697
+  num_of_frames_file_name: 'num_of_frames'
+  num_of_audio_frames_file_name: 'num_of_audio_frames'
+  db_creation_errors_file_name: 'db_creation_errors.txt'
+  video_frames_file_name: 'video_frames'
+  shapes2d_file_name: 'shapes_2d'
+  anchors_file_name: 'anchors'
+general:
+
+  # for timit evaluation, choose Validation and for lrs2 choose Test !!!!
+
+  image_gen_show_frames: False
+  db_gen_type: 'Train' # Train, Validation, Test or Example
+  db_name: 'lrs2_dataset'
+  target_audio_rate: 16000
+  target_video_fps: 25
+  mouth_width: 120
+  mouth_height: 120
+  debug: False
