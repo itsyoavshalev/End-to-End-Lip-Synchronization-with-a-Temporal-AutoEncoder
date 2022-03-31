@@ -25,10 +25,10 @@ Tested using python 3.6.7.
 
 You can install this repo as a Python package:
 ```bash
-$ conda install pytorch==1.0.1 torchvision==0.2.2 cudatoolkit=10.0 -c pytorch
+$ conda install opencv==3.4.1 pytorch==1.0.1 torchvision==0.2.2 cudatoolkit=10.0 -c pytorch
 $ pip install git+https://github.com/itsyoavshalev/End-to-End-Lip-Synchronization-with-a-Temporal-AutoEncoder.git
 ```
-Next, compile and install OpenFace 2.1.0 into ./OpenFace/ (https://github.com/TadasBaltrusaitis/OpenFace).
+Next, install FFmpeg 3.4.2 and compile and install OpenFace 2.1.0 into ./OpenFace/ (https://github.com/TadasBaltrusaitis/OpenFace).
 
 ## <u>Datasets</u>
 For TIMIT, you should first run Utils/preprocess_TIMIT_db.py.

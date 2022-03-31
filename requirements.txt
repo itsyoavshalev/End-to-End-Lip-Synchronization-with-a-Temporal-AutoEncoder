@@ -1,8 +1,5 @@
-ffmpeg==3.4.2
+moviepy==0.2.3.5
 imgaug==0.2.7
-movieoy==0.2.3.5
-numpy==1.15.0
-opencv==3.4.1
 scipy==1.2.0
 tensorboard==1.13.1
 imageio==2.2.0
